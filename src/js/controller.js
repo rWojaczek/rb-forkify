@@ -168,6 +168,10 @@ document
     }
   });
 
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
+
 const init = function () {
   bookmarkView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(contorlRecipes);
@@ -179,5 +183,6 @@ const init = function () {
   validation.addHandlerClick(validateRecipe);
   shoppingList.addHandlerClick(AddToShoppingList);
   shoppingView.addHandlerClick(showShoppingList);
+  newFeature();
 };
 init();
